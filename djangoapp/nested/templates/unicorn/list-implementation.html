@@ -1,0 +1,8 @@
+{% load unicorn %}
+<div>
+    {% unicorn 'list-filter' %}
+    
+    {% for item in list_items %}
+        {% unicorn 'list-item' item=item key=item.id %}
+    {% endfor %}
+</div>

@@ -1,0 +1,12 @@
+<!doctype html>
+{% load unicorn %}
+<html lang="en">
+  <head>
+    <title>Django Unicorn Example</title>
+    {% unicorn_scripts %}
+  </head>
+  <body>
+    {% csrf_token %}
+    {% unicorn 'overview' %}
+  </body>
+</html>

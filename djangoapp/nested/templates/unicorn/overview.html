@@ -1,0 +1,10 @@
+{% load unicorn %}
+
+<div>
+    {% if MY_FLAG %}
+        Flag
+    {% else %}
+        NoFlag
+    {% endif %}
+    {% unicorn 'list-implementation' list_items=list_items %}
+</div>
